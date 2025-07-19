@@ -1,0 +1,16 @@
+[
+  {
+    "date": "19.7.2025",
+    "time": "18:00-23:00",
+    "capacity": 150,
+    "location": "Tenovice 16, Spálené Poříčí",
+    "status": "Budoucí"
+  },
+  {
+    "date": "12.6.2025",
+    "time": "17:00-22:00",
+    "capacity": 100,
+    "location": "Brno, Park ABC",
+    "status": "Minulá"
+  }
+]

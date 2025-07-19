@@ -1,0 +1,19 @@
+{
+  "name": "grilovacky",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "instagram-fetcher": "^1.1.0",
+    "tesseract.js": "^6.0.1"
+  }
+}
