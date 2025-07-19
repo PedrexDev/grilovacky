@@ -1,16 +1,13 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-const fs = require('fs');
 const path = require('path');
+const fs = require('fs');
 
 const app = express();
-const port = 3000;
+const PORT = 3000;
+const grilovackyPath = path.join(__dirname, 'data', 'grilovacky.json');
 
 app.set('view engine', 'ejs');
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
-
-const grilovackyPath = path.join(__dirname, 'data', 'grilovacky.json');
 
 function loadGrilovacky() {
   const data = fs.readFileSync(grilovackyPath);
@@ -22,6 +19,6 @@ app.get('/', (req, res) => {
   res.render('index', { grilovacky });
 });
 
-app.listen(port, () => {
-  console.log(`Server běží na http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Server běží na http://localhost:${PORT}`);
 });
